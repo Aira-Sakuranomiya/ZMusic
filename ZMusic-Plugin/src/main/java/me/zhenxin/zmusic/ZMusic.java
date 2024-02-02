@@ -59,7 +59,6 @@ public final class ZMusic {
         new LoadConfig().load();
         ZMusic.log.sendNormalMessage("成功加载配置文件!");
         ZMusic.runTask.runAsync(() -> {
-            OtherUtils.checkUpdate(sender, false);
             new LoadLang().load();
             if (NeteaseLogin.isLogin()) {
                 NeteaseLogin.refresh();

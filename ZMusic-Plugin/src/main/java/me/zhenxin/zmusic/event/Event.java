@@ -12,10 +12,6 @@ public class Event {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            boolean isAdmin = ZMusic.player.hasPermission(player, "zmusic.admin");
-            if (isAdmin) {
-                OtherUtils.checkUpdate(player, true);
-            }
         });
     }
 }
